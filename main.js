@@ -75,6 +75,9 @@ async function loadGuestbook(thatId) { //thatId 값 가져오기
 }
 }
 
+document.addEventListener('DOMContentLoaded', () => {
+  loadGuestbook(); // 초기 목록 로드
+});
 
 //POST하기
 document.getElementById("form").addEventListener('submit', async function(event) {
