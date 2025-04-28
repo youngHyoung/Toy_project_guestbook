@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>방명록 작성하기</title>
+  <link rel = "stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>⚡방명록 작성하기!⚡</h1>
+  <div id="write-container">
+    <h3>🔽 아래 방명록을 작성해주세요! 🔽</h3>
+    <form action="http://52.79.131.217:8000/guestbook/" method="post" id="form">
+      <label for="title">😁제목:</label>
+      <input type="text" id="title" name="title"  placeholder="여기에 작성해주세요!" required >
+      <br>
+      <label for="name">🔖이름:</label>
+      <input type="text" id="name" name="name" placeholder="이름을 입력하세요" required>
+      <br>
+      <label for="content">✍️내용입력:</label>
+      <textarea id="content" name="content"  placeholder="글을 작성해주세요!" required ></textarea>
+      <br>    
+      <label for="password">🤐비밀번호:</label>
+      <input type="text" id="password" name="password" placeholder="숫자 4자리를 입력하세요" required>
+      <br>
+      <button type="submit">작성 완료!</button>
+    </form>
+    <!-- <button type="submit">제출</button> -->
+  </div>
+
+  <div id="response-container">
+    <!-- 여기에 개인 방명록 추가 -->
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
+
+
+<!-- 이름, 텍스트, 날짜(직접클릭 date),  -->
+
+
+<!-- <form action="http://52.79.131.217:8000/guestbook/" method="post" id="form">
+  <label for="name">🔖이름:</label>
+  <input type="text" id="name" name="name" placeholder="이름을 입력하세요" required>
+  <br>
+  <label for="password">🤐비밀번호:</label>
+  <input type="text" id="password" name="password" placeholder="숫자 4자리를 입력하세요" required>
+  <br>
+  <label for="title">😁제목:</label>
+  <input type="text" id="title" name="title"  placeholder="여기에 작성해주세요!" required >
+  <br>
+  <label for="content">✍️내용입력:</label>
+  <textarea id="content" name="content"  placeholder="글을 작성해주세요!" required ></textarea>
+  <br>
+  <button type="submit">작성 완료!</button> -->
