@@ -9,7 +9,7 @@ document.getElementById("form").addEventListener('submit', async function(event)
   });
   
   try{
-    const response = await fetch("https://52.79.131.217:8000/guestbook/", {
+    const response = await fetch("http://52.79.131.217:8000/guestbook/", {
       method: 'POST',
       headers: {
         'Content-Type' : 'application/json', //해더 옵션 설정
@@ -49,7 +49,7 @@ document.getElementById("form").addEventListener('submit', async function(event)
     const password = passwordInput.value;
 
     try {
-      const deleteResponse = await fetch(`https://52.79.131.217:8000/guestbook/`,{
+      const deleteResponse = await fetch(`http://52.79.131.217:8000/guestbook/`,{
         method: "DELETE",
         headers: {
           'Content-Type' : 'application/json',
