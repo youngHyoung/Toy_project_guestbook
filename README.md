@@ -18,7 +18,7 @@
 - formData 객체를 fetch 보내는 방식
 - throw new Error의 사용방법과 작동방식
 - 서버의 response body와 내용 및 순서를 맞추는 방법
-- URL의 엔드포인트의 의미
+- API의 엔드포인트의 의미
 - 이벤트 함수에 asnyc 쓰기
 - DOMContentLoaded의 사용법(비동기 프로그래밍 방식을 고려한 위치선정)
   
